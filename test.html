@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+
+.modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.5);
+      }
+      .modal-content {
+        background-color: #fff;
+        border-radius: 5px;
+        margin: 15% auto;
+        padding: 20px;
+        width: 50%;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        text-align: center;
+      }
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: -15px;
+      }
+      .close:hover, .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      body {
+        background-color: #f2f2f2;
+      }
+      .login-box {
+        margin: auto;
+        width: 50%;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        text-align: right;
+      }
+      input[type=text], input[type=password] {
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #f2f2f2;
+      }
+      input[type=submit], input[type=reset] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type=submit]:hover, input[type=reset]:hover {
+        background-color: #45a049;
+      }
+      input[type=reset] {
+        margin-left: 10px;
+      }
+      /* Modal styles */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.5);
+      }
+      .modal-content {
+        background-color: #fff;
+        border-radius: 5px;
+        margin: 15% auto;
+        padding: 20px;
+        width: 50%;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        text-align: center;
+      }
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: -15px;
+      }
+      .close:hover, .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-box">
+      <h1>Login</h1>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Login" style="float: right;">
+        <input type="reset" value="Clear" style="float: right;">
+      </form>
+    </div>
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Welcome to my website! Please take a moment to explore and let me know if you have any questions.</p>
+        </div>
+      </div>
+    <!-- Script to show modal -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+  
+        // Get the close button
+        var close = document.getElementsByClassName("close")[0];
+  
+        // When the page loads, show the modal
+        window.onload = function() {
+          modal.style.display = "block";
+        }
+  
+        // When the user clicks on the close button, hide the modal
+        close.onclick = function() {
+          modal.style.display = "none";
+        }
+      </script>
+    </body>
+  </html>
